@@ -1,0 +1,33 @@
+const obstacles = [];
+
+const Y=400; //Taille de la fenetre, à voir
+const X=400;
+
+function RandomPos(min,max){
+    return Math.floor(Math.random()*(max-min+1)+min;
+};
+
+
+function spawnObstacle(){
+    const new_obstacle = {
+	position : (RandomPos(0,Y),0),
+	size : (20,20),
+	speed : 1 };
+    obstacles.push(new_obstacle);
+}
+
+
+function updateObstacles(){
+    for (elem of obstacles){
+	if  (elem.position[1]+1<X) {
+	    elem.position[1]=elem.position[1]+1; // Descente de 1, à voir
+	}
+	else {
+	    obs
+	}
+    }
+}
+
+
+function checkCollisions(){
+}
